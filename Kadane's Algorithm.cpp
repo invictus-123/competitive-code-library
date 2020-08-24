@@ -1,4 +1,4 @@
-ll kadane(vector <ll> &v, int st = 0, int en = -1) {
+ll kadane(vector <ll> &v, int st = 0, int en = -1) { // starting and end index can be passed to the function if needed
 	if(en == -1) en = v.size() - 1;
 	ll cur_sum = 0, mx_sum = 0;
 	for(int i = st; i <= en; i ++) {
