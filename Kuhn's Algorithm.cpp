@@ -1,3 +1,4 @@
+// both the sets are 0-indexed
 struct Kuhn {
 	vector <vector <int>> g;
 	vector <int> L, R; vector <bool> vis;
