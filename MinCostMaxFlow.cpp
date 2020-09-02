@@ -1,6 +1,12 @@
+// Credits : Benq
+// Time Complexity : O(FMlog(M)), where F is the max flow
+// Verification : https://codeforces.com/contest/362/submission/91194818
+// Declaration : MCMF <SZ> Network;
+// 		 Add edges -> Network.addEdge(from, to, cap, cost);
+// 		 pair {flow, cost} = Network.calc(src, sink);
 template <int SZ> struct MCMF { 
 	int N = 0, s, t;
-	typedef int F; typedef int C;
+	typedef int F; typedef int C; // define type of flow and cost
 	struct Edge {int to, rev; F flow, cap; C cost; int id;};
 	vector <Edge> adj[SZ];
 	void addEdge(int u, int v, F cap, C cost, int id = 0) {
