@@ -1,3 +1,10 @@
+// Time Complexity : O(nlogn)
+// Verification : https://codeforces.com/contest/128/submission/91634452
+// Declaration : To build the suffix array and LCP array for string s -
+// 		Suffix Array(s);
+// 		SA.buildSA();
+// 		SA.buildLCP();
+// SA.n -> size of string, SA.p -> suffix array, SA.lcp -> LCP array
 void countSort(vector <int> &p, vector <int> &c) {
 	int n = p.size();
 	vector <int> cnt(n), pos(n);
