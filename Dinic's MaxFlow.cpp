@@ -1,6 +1,12 @@
+// Credits : Benq
+// Time Complexity : O(N^2M) flow, O(Msqrt(N)) bipartite matching
+// Verification : https://codeforces.com/contest/1139/submission/91487265
+// Declaration : Dinic <SZ> Network;
+// 		 Adding edges -> Network.addEdge(from, to, cap);
+// 		 Max Flow = Network.maxFlow(src, sink);
 template <int SZ> struct  Dinic {
 	int N = 0, s, t;
-	typedef ll F;
+	typedef ll F; // define type of flow
 	struct Edge {int to, rev; F flow, cap; int id;};
 	vector <Edge> adj[SZ];
 	void addEdge(int u, int v, F cap, int id = 0) {
