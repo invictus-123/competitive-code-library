@@ -1,3 +1,10 @@
+// Time Complexity - O(nlogn) precomputation
+// 		     O(1) per query
+// Verification - https://codeforces.com/contest/475/submission/91093846
+// Declaration - Creates a sparse table over array 'a'
+// 			SparseTable <int> ST(sz);
+// 		 To query - ST.query(l, r);
+// 		 Modify comb function as per need
 int a[MAX];
 template <class T> struct SparseTable {
 	int n, logn;
