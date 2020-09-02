@@ -1,3 +1,9 @@
+// Sources : https://www.topcoder.com/community/competitive-programming/tutorials/assignment-problem-and-hungarian-algorithm/
+// Time Complexity : O(N^3)
+// Verification : https://codeforces.com/contest/491/submission/82311594
+// Declaration : Build the cost matrix (for min weight matching use negative costs)
+// 		 xmatch[i] -> cost[i][xmatch[i]] is chosen
+// 		 ymatch[j] -> cost[ymatch[j]][j] is chosen
 const int N = 62, INF = 1e9;
 int cost[N][N], max_match, lx[N], ly[N], xmatch[N], ymatch[N], slack[N], slackx[N], pre[N];
 bool S[N], T[N];
