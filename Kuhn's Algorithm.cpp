@@ -1,4 +1,9 @@
-// both the sets are 0-indexed
+// Time Complexity : O(NM)
+// Verification : https://codeforces.com/contest/387/submission/91670484
+// Declaration : Kuhn Matcher(SZ1, SZ2);
+// 		 Add edges : Matcher.addEdge(from, to);
+// 		 Max matching = Matcher.solve();
+// Note : Both sets are 0-indexed
 struct Kuhn {
 	vector <vector <int>> g;
 	vector <int> L, R; vector <bool> vis;
