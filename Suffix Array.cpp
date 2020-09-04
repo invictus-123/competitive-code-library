@@ -18,7 +18,7 @@ void countSort(vector <int> &p, vector <int> &c) {
 	}
 	p = p_new;
 }
-struct SuffxArray {
+struct SuffixArray {
 	string s; int n;
 	vector <int> p, c, lcp;
 	SuffxArray(string &cur) {
