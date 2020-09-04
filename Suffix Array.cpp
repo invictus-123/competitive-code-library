@@ -21,7 +21,7 @@ void countSort(vector <int> &p, vector <int> &c) {
 struct SuffixArray {
 	string s; int n;
 	vector <int> p, c, lcp;
-	SuffxArray(string &cur) {
+	SuffixArray(string &cur) {
 		s = cur + "$"; n = s.size();
 		p.resize(n), c.resize(n), lcp.resize(n);
 	}
