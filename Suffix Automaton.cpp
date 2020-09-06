@@ -4,10 +4,9 @@ struct SuffixAutomaton {
 		map <char, int> transitions;
 	};
 	int n, last, sz; vector <state> states;
-	vector <ll> dp;
 	vector <bool> terminal;
 	SuffixAutomaton(int _n) {
-		n = _n, sz = 1, last = 0; terminal.resize(2 * n); dp.assign(2 * n, -1);
+		n = _n, sz = 1, last = 0; terminal.resize(2 * n);
 		states.resize(2 * n); states[0].len = 0, states[0].link = -1;
 	}
 	void extend(char c) {
