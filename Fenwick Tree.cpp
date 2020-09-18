@@ -26,6 +26,6 @@ struct FenwickTree {
 				x += (1 << i);
 			}
 		}
-		return x;
+		return x + 1;
 	}
 };
