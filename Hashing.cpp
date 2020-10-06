@@ -1,6 +1,6 @@
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 ll rand(ll a, ll b) {
-    return uniform_int_distribution<ll>(a, b)(rng);
+	return uniform_int_distribution<ll>(a, b)(rng);
 }
 const int K = 3;
 struct Hash {
