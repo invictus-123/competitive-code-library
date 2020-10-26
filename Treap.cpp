@@ -4,7 +4,7 @@ struct Treap {
 	int sz; ll sum;
 	bool flip;
 	Treap(int val) {
-		p = rng(); sum = val, data = val, sz = 1;
+		p = rng(); sum = val, data = val, sz = 1, flip = 0;
 		c[0] = NULL, c[1] = NULL;
 	}
 };
