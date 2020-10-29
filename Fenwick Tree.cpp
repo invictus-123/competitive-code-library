@@ -4,17 +4,11 @@ struct FenwickTree {
 	FenwickTree(int n):
 		n(n), BIT(2 * n) {}
 	void update(int x, ll val) {
-		while(x <= n) {
-			BIT[x] += val;
-			x += x & (-x);
-		}
+		for(; x <= n; x += x & (-x)) BIT[x] += val;
 	}
 	ll get(int x) {
 		ll sum = 0;
-		while(x > 0) {
-			sum += BIT[x];
-			x -= x & (-x);
-		}
+		for(; x > 0; x -= x & (-x)) sum += BIT[x];
 		return sum;
 	}
 	int SearchPrefix(ll val) {
